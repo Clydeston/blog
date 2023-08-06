@@ -21,6 +21,6 @@ Usually, this can be achieved by loading a fresh copy of ntdll.dll from disk. Th
 denying yourself the scalability of your malware, it will be limited to the versions specified.</p>
 
 
-<p>I've already described syscalls in another repository <a href="https://github.com/Clydeston/windows-syscalls"here</a>, but I had some issues with thread creation (probably the incorrect syscall number although I checked multiple times),
+<p>I've already described syscalls in another repository [here](https://github.com/Clydeston/windows-syscalls), but I had some issues with thread creation (probably the incorrect syscall number although I checked multiple times),
 however this issues was solved when using syswhyspers2, creating a thread with zero crashes</p>
 ------
