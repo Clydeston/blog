@@ -14,7 +14,7 @@ tags:
 In Windows syscalls use the native library (features stored inside ntdll.dll) to send a specific request code to the kernel, dependant on the action to perform. 
 The issue with syscalls (not just limited to the windows os) is that they change between versions and updates, this makes them unreliable and a pain to use if you want scalability,
 which most programs (especially malware) do.
-<h2>What is syswhispers<h2>
+<h2>What is syswhispers</h2>
 <p>Syswhyspers2 aims to streamline this process via making the required syscall codes for different os versions available automatically, whereas syswhyspers og did not.
 Even better it utilises something they've called as random syscall jumps, which essentially bypasses hooks placed via AV / EDRs to grab the syscall stub before they are hooked.
 Usually, this can be achieved by loading a fresh copy of ntdll.dll from disk. This whole process can be ignoed if using hardcoded syscall values, but this defeats the point of using syswhyspers 
