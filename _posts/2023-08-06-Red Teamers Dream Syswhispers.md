@@ -10,7 +10,7 @@ tags:
 ---
 
 <h1>What are syscalls and what is syswhyspers</h1>
-<p>Syscalls are the userlands communication to the kernel to perform a specific task, it's a request from userland to the kernel api to perform the given action. 
+Syscalls are the userlands communication to the kernel to perform a specific task, it's a request from userland to the kernel api to perform the given action. 
 In Windows syscalls use the native library (features stored inside ntdll.dll) to send a specific request code to the kernel, dependant on the action to perform. 
 The issue with syscalls (not just limited to the windows os) is that they change between versions and updates, this makes them unreliable and a pain to use if you want scalability,
 which most programs (especially malware) do.
@@ -21,6 +21,5 @@ Usually, this can be achieved by loading a fresh copy of ntdll.dll from disk. Th
 denying yourself the scalability of your malware, it will be limited to the versions specified.</p>
 
 
-<p>I've already described syscalls in another repository [here](https://github.com/Clydeston/windows-syscalls), but I had some issues with thread creation (probably the incorrect syscall number although I checked multiple times),
+<p>I've already described syscalls in another repository [link](https://github.com/Clydeston/windows-syscalls, "here"), but I had some issues with thread creation (probably the incorrect syscall number although I checked multiple times),
 however this issues was solved when using syswhyspers2, creating a thread with zero crashes</p>
-------
